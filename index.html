@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>MSJHS Class of 2018</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--
+    <script>
+    var hashTagActive = "";
+    $(".scroll").click(function(event) {
+        if (hashTagActive != this.hash) {
+            event.preventDefault();
+            // calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            // go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
+</script>
+-->
+    <script>
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+        });
+
+    </script>
+</head>
+
+<body class="landing">
+
+    <!-- Header -->
+    <header id="header" class="skel-layers-fixed">
+        <h1><a href="index.html">2018</a></h1>
+        <a href="#nav"></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a class="page-scroll" href="#banner">Home</a></li>
+            <li><a class="page-scroll" href="#one">News</a></li>
+            <li><a class="page-scroll" href="#two">What We're Doing</a></li>
+            <li><a class="page-scroll" href="#three">Student Portal</a></li>
+            <li><a class="page-scroll" href="#four">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+        <!--        <i class="icon fa-diamond"></i>-->
+        <img src="images/logo-white.png" />
+        <h2>Mission San Jose High School<br/>Class of 2018</h2>
+        <p>Interesting, swagalicious tagline here.</p>
+        <!--
+        <ul class="actions">
+    <li><a href="#" class="button big special">Learn More</a></li>
+</ul>
+-->
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1">
+        <header class="major narrow" style="width: auto;">
+            <h2>News</h2>
+        </header>
+        <div class="inner">
+            <article class="feature left">
+                <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <ul class="actions">
+                        <li>
+                            <a href="#" class="button alt">More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="feature right">
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
+                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <ul class="actions">
+                        <li>
+                            <a href="#" class="button alt">More</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper special">
+        <div class="inner">
+            <header class="major narrow">
+                <h2>What We've Been Up To</h2>
+                <p>Click any of the pictures below to learn abot some recent events.</p>
+            </header>
+            <div class="image-grid">
+                <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+                <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+                <!--
+                <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+<a href="#" class="image"><img src="images/pic10.jpg" alt="" /></a>
+-->
+            </div>
+            <ul class="actions">
+                <li><a href="#" class="button big alt">View More</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style3 special">
+        <div class="inner">
+            <header class="major narrow	">
+                <h2>Current Students</h2>
+                <p>Are you a current student in the Class of 2018?</p>
+            </header>
+            <ul class="actions">
+                <li><a href="#" class="button big alt">Enter the student portal</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Four -->
+    <section id="four" class="wrapper style2 special">
+        <div class="inner">
+            <header class="major narrow">
+                <h2>Get in touch</h2>
+                <p>Questions? Comments? Concerns? Want to say hi? Reach out to the officers.</p>
+            </header>
+            <!--
+            <form action="#" method="POST">
+                <div class="container 75%">
+                    <div class="row uniform 50%">
+                        <div class="6u 12u$(xsmall)">
+                            <input name="name" placeholder="Name" type="text" />
+                        </div>
+                        <div class="6u$ 12u$(xsmall)">
+                            <input name="email" placeholder="Email" type="email" />
+                        </div>
+                        <div class="12u$">
+                            <textarea name="message" placeholder="Message" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li>
+                        <input type="submit" class="special" value="Submit" />
+                    </li>
+                    <li>
+                        <input type="reset" class="alt" value="Reset" />
+                    </li>
+                </ul>
+            </form>
+-->
+            <ul class="actions">
+                <li><a href="mailto:officers@msjhs2018.org" class="button big alt">Reach out</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li>
+                    <a href="http://facebook.com/groups/msjhs2018/" class="icon fa-facebook">
+                        <span class="label">Facebook</span>
+                    </a>
+                </li>
+                <!--
+                <li>
+    <a href="#" class="icon fa-twitter">
+        <span class="label">Twitter</span>
+    </a>
+</li>
+<li>
+    <a href="#" class="icon fa-instagram">
+        <span class="label">Instagram</span>
+    </a>
+</li>
+<li>
+    <a href="#" class="icon fa-linkedin">
+        <span class="label">LinkedIn</span>
+    </a>
+</li>
+-->
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2015 MSJHS Class of 2018. We're part of a 501(c)(3) non-profit.</li>
+                <li>Site created by <a href="http://sanil.co">Sanil Chawla</a>.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/googlejq.js" />
+    <script src="assets/js/jquery.easing.min.js" />
+
+</body>
+
+</html>
