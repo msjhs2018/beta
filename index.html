@@ -7,43 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--
-    <script>
-    var hashTagActive = "";
-    $(".scroll").click(function(event) {
-        if (hashTagActive != this.hash) {
-            event.preventDefault();
-            // calculate destination place
-            var dest = 0;
-            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-                dest = $(document).height() - $(window).height();
-            } else {
-                dest = $(this.hash).offset().top;
-            }
-            // go to destination
-            $('html,body').animate({
-                scrollTop: dest
-            }, 2000, 'swing');
-            hashTagActive = this.hash;
-        }
-    });
-</script>
--->
-    <script>
-        $(function() {
-            $('a.page-scroll').bind('click', function(event) {
-                var $anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1500, 'easeInOutExpo');
-                event.preventDefault();
-            });
-        });
-
-    </script>
 </head>
 
 <body class="landing">
@@ -85,22 +50,22 @@
         </header>
         <div class="inner">
             <article class="feature left">
-                <span class="image"><img src="images/pic01.jpg" alt="" /></span>
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
                 <div class="content">
-                    <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <h2>Class Donation and HC Item Order Time :)</h2>
+                    <p>In order to help you have the time of your life in high school, we need donations to keep us running! Our donation form is now up, along with our Homecoming order form.</p>
                     <ul class="actions">
                         <li>
-                            <a href="#" class="button alt">More</a>
+                            <a href="#" class="button alt">Download the Forms</a>
                         </li>
                     </ul>
                 </div>
             </article>
             <article class="feature right">
-                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <span class="image"><img src="images/logo-blk.png" alt="" /></span>
                 <div class="content">
-                    <h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-                    <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+                    <h2>Announcing the winner of the class logo competition!</h2>
+                    <p>The Paintbrush-style logo submission from the team of Jasmine Syu and Christina Qian won as the class's choice, after nearly 200 casted votes.</p>
                     <ul class="actions">
                         <li>
                             <a href="#" class="button alt">More</a>
@@ -135,6 +100,48 @@
             </ul>
         </div>
     </section>
+
+    <!-- Officers -->
+    <section id="officers" class="wrapper style1">
+        <header class="major narrow" style="width: auto;">
+            <h2>The Officers</h2>
+        </header>
+        <div class="inner">
+            <article class="feature left">
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Austin Chang</h2>
+                    <p>President
+                        <br/>Insert quote from Austina here</p>
+                </div>
+            </article>
+            <article class="feature right">
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Raymond Yin</h2>
+                    <p>Vice President
+                        <br/>Insert quote from Raymundo here</p>
+                </div>
+            </article>
+            <article class="feature left">
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Cherin Koh</h2>
+                    <p>Treasurer
+                        <br/>Insert quote from Chair here</p>
+                </div>
+            </article>
+            <article class="feature right">
+                <span class="image"><img src="images/pic02.jpg" alt="" /></span>
+                <div class="content">
+                    <h2>Sanil Chawla</h2>
+                    <p>Secretary
+                        <br/><span class="fa fa-heart" /></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
 
     <!-- Three -->
     <section id="three" class="wrapper style3 special">
@@ -227,7 +234,7 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/googlejq.js" />
+    <!--    <script src="assets/js/googlejq.js" />-->
     <script src="assets/js/jquery.easing.min.js" />
 
 </body>

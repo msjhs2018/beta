@@ -3583,7 +3583,10 @@ body.landing {
 
 #footer {
     /*    background-color: #1E2832;*/
-    background-image: url("images/banner.jpg");
+    background-image: url("../../images/bg-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
 }
@@ -3622,12 +3625,13 @@ body.landing {
     -webkit-transition: color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out;
-    color: #a5a9ad;
+    /*    color: #a5a9ad;*/
+    color: #fff;
 }
 #footer a:active,
 #footer a:focus,
 #footer a:hover {
-    color: #fff;
+    color: #ff0;
 }
 #footer .inner {
     padding: 6em 0 4em 0;
@@ -3642,7 +3646,8 @@ body.landing {
     padding-right: 0;
 }
 #footer .copyright {
-    color: #a5a9ad;
+    /*    color: #a5a9ad;*/
+    color: #fff;
     font-size: 0.9em;
     margin: 0 0 2em 0;
     padding: 0;
